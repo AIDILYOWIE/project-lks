@@ -1,0 +1,68 @@
+canvas {
+  display: block;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 130);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.container .box form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+}
+
+.container h1 {
+  color: white;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+.box form button {
+  margin-top: 0.6em;
+  border: none;
+  border-radius: 10px;
+  color: rgb(0, 0, 130);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.box form button:hover {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+.box form input {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.box form input:focus {
+  outline: none;
+}
+
+.box form input,
+.box form button {
+  padding: 7px 0;
+  font-weight: 900;
+}
+
+.remove {
+  display: none;
+}
